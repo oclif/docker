@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:18.04
 
 MAINTAINER Jeff Dickey
 
@@ -21,6 +21,7 @@ RUN apt-get -y update && apt-get install -y --no-install-recommends \
     nsis \
     p7zip-full \
     xz-utils \
+    gnupg \
   && \
   curl https://bootstrap.pypa.io/get-pip.py | python && \
   pip install awscli --upgrade && \
